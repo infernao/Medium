@@ -1,0 +1,28 @@
+name = "backend"
+main = "src/index.ts"
+compatibility_date = "2025-01-10"
+
+# compatibility_flags = [ "nodejs_compat" ]
+
+ [vars]
+ DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZWRmNTU0N2YtOGE4NC00NmZlLWI4MzAtM2FlMDk4OWExNzc4IiwidGVuYW50X2lkIjoiMDAzZmMyOWQyMjE4MzE3YWY4MzVhNzc1MTMwZWYxMGUwNGQxMTIyMTMxYWZlMTk2MWIyNzUxNTkzN2FmYzhiNyIsImludGVybmFsX3NlY3JldCI6IjI1MzgzZjVkLWVmYTAtNDMxNi05NWNkLTc4YmZjMTI0MTBjNiJ9.r6qTmib6Tv3Cq9FEMOV_t19eDK-dYWd0bgd4glgevLk"
+ JWT_SECRET="mediumsecret"
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
+
+[observability]
+enabled = true
+# head_sampling_rate = 1

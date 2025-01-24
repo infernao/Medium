@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": false,
+    "skipLibCheck": true,
+    "lib": [
+      "ESNext"
+    ],
+    "types": [
+      "@cloudflare/workers-types/2023-07-01"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "rootDir": "./src",         // Specifies the source directory for TypeScript files
+    "outDir": "./dist",         // Specifies the output directory for compiled JavaScript files
+    "esModuleInterop": true     // Ensure compatibility with commonJS modules
+  },
+  "include": [
+    "src/**/*"                   // Include all files inside the `src` directory
+  ],
+  "exclude": [
+    "node_modules"               // Exclude `node_modules` from being compiled
+  ]
+}

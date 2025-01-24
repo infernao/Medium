@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "rootDir": "./src",  // The source files are in the 'src' folder
+    "outDir": "./dist",  // The compiled output goes to the 'dist' folder
+    "composite": true,   // Ensure this is set for project references to work
+    "declaration": true, // Ensure declaration files are generated
+    "declarationMap": true, // Generates declaration maps for debugging
+    "strict": true,      // Enable strict type checking
+    "skipLibCheck": true // Skip library check to speed up compilation
+  }
+}
+
+

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "composite": true,                              // Enable project references
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Path for build info file
+    "target": "ES2020",                             // Target JavaScript version
+    "useDefineForClassFields": true,                // Use 'define' for class fields (for compatibility with modern JS)
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],       // Include libraries for ES2020 and DOM
+    "module": "ESNext",                             // Use the latest module syntax (ESNext)
+    "skipLibCheck": true,                           // Skip checking of libraries for faster builds
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",                  // Use bundler module resolution strategy
+    "allowImportingTsExtensions": true,             // Allow importing TypeScript files with extensions
+    "isolatedModules": true,                        // Ensure files are treated as isolated modules (required for transpilation)
+    "moduleDetection": "force",                     // Force module detection
+    "noEmit": true,                                // Allow emitting output files
+    "jsx": "react-jsx",                             // Use React JSX syntax (for React 17+)
+
+    /* Linting */
+    "strict": true,                                 // Enable strict type-checking options
+    "noUnusedLocals": true,                         // Warn if there are unused local variables
+    "noUnusedParameters": true,                     // Warn if there are unused function parameters
+    "noFallthroughCasesInSwitch": true,             // Ensure all switch cases are handled correctly
+    "noUncheckedSideEffectImports": true,            // Prevent imports that have side effects
+
+    /* Directories */
+    "rootDir": "./src",                             // Input directory for source files
+    "outDir": "./dist"                              // Output directory for compiled JavaScript files
+  },
+  "include": ["src"],                                // Include all files in the 'src' directory
+  "exclude": ["node_modules"]                        // Exclude the 'node_modules' directory
+}
+
+
